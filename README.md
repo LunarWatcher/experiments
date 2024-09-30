@@ -1,0 +1,1 @@
+This repo is a collection repo of misc. experiments. The code here is mainly kept as a public archive, and because it's low-quality experiments, the code quality is likely questionable. If you plan to use anything from this repo, please remember that this repo is not a shining example of anything.
