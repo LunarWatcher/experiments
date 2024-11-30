@@ -42,6 +42,9 @@ FetchContent_MakeAvailable(
     allegro5
 )
 
+# For some reason, Allegro's targets doesn't include header include dirs
+# This probably isn't enough to cover everything either, it's apparently supposed to be covered by 
+# `make install`.
 set (ALLEGRO_INCLUDE_DIRS
     ${allegro5_SOURCE_DIR}/include/
     ${allegro5_BINARY_DIR}/include/
@@ -53,6 +56,7 @@ set (ALLEGRO_INCLUDE_DIRS
     ${allegro5_SOURCE_DIR}/addons/primitives/
 )
 
+# Global include required for agui to cooperate
 include_directories(PUBLIC
     ${ALLEGRO_INCLUDE_DIRS}
 )
