@@ -1,3 +1,5 @@
+# Raylib experiment [ended]
+
 This folder contains an experiment with Raylib 
 
 ## Experiment results
@@ -7,6 +9,9 @@ This folder contains an experiment with Raylib
 Font management is utter cancer. In an early iteration that tried working with unicode, it appears that fonts are static once loaded. All the docs say characters must be loaded alongside the font, which fucking sucks if you have arbitrary input, for example. There's no (trivial) way to load glyphs on-demand without reloading the entire font, which is such a waste.
 
 Dealing with fallback fonts is also difficult, particularly in a UI context. Would probably have to do cursed shit to reliably render text with two different fonts 
+
+> [!NOTE]
+> In retrospect, this is partly wrong. Glyph loading is still horseshit, but there isn't a need for two fonts. A test CJK font used in `factorio-stack` also covers English. ✨ The more you know ✨
 
 ### Misc.
 
