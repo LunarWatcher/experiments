@@ -14,6 +14,7 @@ set(WANT_DEMO OFF CACHE STRING "" FORCE)
 set(WANT_POPUP_EXAMPLES OFF CACHE STRING "" FORCE)
 set(WANT_DOCS OFF CACHE STRING "" FORCE)
 set(ALLEGRO_SDL ON CACHE STRING "" FORCE)
+set(WANT_NATIVE_DIALOG ON CACHE STRING "" FORCE)
 
 set(WANT_SHARED ON CACHE STRING "" FORCE)
 
@@ -53,6 +54,9 @@ set (ALLEGRO_INCLUDE_DIRS
     ${allegro5_SOURCE_DIR}/addons/font/
     ${allegro5_SOURCE_DIR}/addons/video/
     ${allegro5_SOURCE_DIR}/addons/audio/
+    ${allegro5_SOURCE_DIR}/addons/color/
+    ${allegro5_SOURCE_DIR}/addons/main/
+    ${allegro5_SOURCE_DIR}/addons/acodec/
     ${allegro5_SOURCE_DIR}/addons/primitives/
 )
 
