@@ -7,6 +7,8 @@ This repo is intentionally undocumented, aside the bare minimum I need to unders
 ---
 
 Current experiments in reverse chronological order:
+* `reflect-cpp`: Mini-test fucking around with reflect-cpp. Nothing too fancy. Largely exists to test some small things before I decide to fully switch from `nlohmann/json`. I do like nlohmann/json, but the code overhead for deserialising structs, especially when the deserialisation (and serialisation) is primitive is just annoying to implement. Plus, it reflect-cpp uses yyjson as its JSON backend, and yyjson is fast enough that I [already use it directly in a project](https://github.com/LunarWatcher/se-data-dump-transformer/blob/3257c034980665b0a29469f1418686f3379d288a/transformer/CMakeLists.txt#L77-L82) that needs the gigabyte writes promised by yyjson.
+* `allegro-clay`: Brief minimal Allegro renderer for Clay
 * `factorio-stack`: test game based on the same core stack as Factorio (SDL2, Allegro5, AGUI)
 * `raylib`: test game with raylib that ended up just being screwing around with fonts
 
