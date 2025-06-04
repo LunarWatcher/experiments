@@ -1,0 +1,9 @@
+[requires]
+reflect-cpp/0.18.0
+[generators]
+CMakeDeps
+CMakeToolchain
+[layout]
+cmake_layout
+[options]
+*:shared = True
