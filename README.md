@@ -8,6 +8,7 @@ This repo is intentionally undocumented, aside the bare minimum I need to unders
 
 Current experiments in reverse chronological order:
 
+* `qt-embedded`: Testing embedding other entire applications within a qt app
 * `tui`: Testing TUI creation
 * `gtk`/`qt`: Testing GUI libraries
 * `terminal-fuckery`: Fucking around with terminals, the Linux API, and how hard I can push subprocesses. This is exploratory testing for a C++ library for integration testing interactive CLI apps.
