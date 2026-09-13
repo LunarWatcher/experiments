@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.10)
-project(stc)
+project(test-gtk)
 
 find_package(PkgConfig)
 pkg_check_modules(GTKMM gtkmm-4.0)

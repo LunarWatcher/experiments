@@ -8,6 +8,7 @@ This repo is intentionally undocumented, aside the bare minimum I need to unders
 
 Current experiments in reverse chronological order:
 
+* `tui`: Testing TUI creation
 * `gtk`/`qt`: Testing GUI libraries
 * `terminal-fuckery`: Fucking around with terminals, the Linux API, and how hard I can push subprocesses. This is exploratory testing for a C++ library for integration testing interactive CLI apps.
 * `drogon-test`: Quick test of [drogon](https://github.com/drogonframework/drogon) to see if it works as a replacement for crowcpp (due to significant bugs)
