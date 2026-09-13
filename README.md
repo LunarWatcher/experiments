@@ -12,7 +12,8 @@ Current experiments in reverse chronological order:
 * `terminal-fuckery`: Fucking around with terminals, the Linux API, and how hard I can push subprocesses. This is exploratory testing for a C++ library for integration testing interactive CLI apps.
 * `drogon-test`: Quick test of [drogon](https://github.com/drogonframework/drogon) to see if it works as a replacement for crowcpp (due to significant bugs)
 * `reflect-cpp`: Mini-test fucking around with reflect-cpp. Nothing too fancy. Largely exists to test some small things before I decide to fully switch from `nlohmann/json`. I do like nlohmann/json, but the code overhead for deserialising structs, especially when the deserialisation (and serialisation) is primitive is just annoying to implement. Plus, it reflect-cpp uses yyjson as its JSON backend, and yyjson is fast enough that I [already use it directly in a project](https://github.com/LunarWatcher/se-data-dump-transformer/blob/3257c034980665b0a29469f1418686f3379d288a/transformer/CMakeLists.txt#L77-L82) that needs the gigabyte writes promised by yyjson.
-    * Future me here: this aged poorly as reflect-cpp now runs on AI slop, so right back to nlohmann/json for non-performance-critical stuff, and raw yyjson for performance-critical stuff. 
+  * Future me here: this aged poorly as reflect-cpp now runs on AI slop, so right back to nlohmann/json for non-performance-critical stuff, and raw yyjson for performance-critical stuff.
+    * Future future me here: this also aged poorly now that nlohmann/json is slop too, and yyjson has been getting slop commits as well
 * `allegro-clay`: Brief minimal Allegro renderer for Clay
 * `factorio-stack`: test game based on the same core stack as Factorio (SDL2, Allegro5, AGUI)
 * `raylib`: test game with raylib that ended up just being screwing around with fonts
